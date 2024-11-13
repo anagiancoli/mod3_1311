@@ -9,4 +9,7 @@ st.write(respdep)
 
 if respgen == 'Masculino':
   st.success("Você conseguiu!")
+
+numero = st.slider('Selecione um número', min_value = 0, max_value = 100)
+st.text("Seu número é " + str(numero))
   
