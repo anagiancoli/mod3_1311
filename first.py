@@ -6,3 +6,7 @@ respdep = st.multiselect('Escolha um departamento',['Selecione','DCS', 'DE', 'DI
 st.write(respgenero)
 st.write(respgen)
 st.write(respdep)
+
+if respgen == 'Masculino':
+  st.success("Você conseguiu!")
+  
