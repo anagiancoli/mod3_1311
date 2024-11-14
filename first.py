@@ -14,3 +14,16 @@ numero = st.slider('Selecione um número', min_value = 0, max_value = 100)
 st.text("Seu número é " + str(numero))
 
 st.slider('Grau de satisfação', 1998,2024)
+
+df = pd.DataFrame({
+    'nomeServidor': ['Adriana', 'Thais', 'Samara'],
+    'salario': [10000, 25000, 20000]
+})
+
+st.write("Criando uma tabela")
+st.write(df)
+
+opcao = st.selectbox(
+    'Qual servidor você gostaria de selecionar?',
+    options=["Selecione..."] + df['nomeServidor'].tolist()
+)
