@@ -14,4 +14,10 @@ numero = st.slider('Selecione um número', min_value = 0, max_value = 100)
 st.text("Seu número é " + str(numero))
 
 st.slider('Grau de satisfação', 1998,2024)
+
+
+import streamlit as st
+
+numero = st.slider('Selecione um número',[0 ,100])
+st.text("Seu número é " + str(numero))
   
